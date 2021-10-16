@@ -1,6 +1,6 @@
 # Example
 
-```
+```jsx
 <List>
   <ListItem>Item 1</ListItem>
   <ListItem>Item 2</ListItem>
@@ -9,7 +9,8 @@
 ```
 
 <Playground>
-  import React, {useCallback} from 'react'
+  import {useCallback} from 'react'
+	import { Button } from '@rundsk/example-component-library'
 
     export default () => {
     	const onClick = useCallback(() => {
@@ -19,7 +20,7 @@
     	return (
     		<>
     			<blockquote cite="https://en.wikipedia.org/wiki/Rose_is_a_rose_is_a_rose_is_a_rose">A <span className="rose">rose</span> is a <span className="rose">rose</span> is a <span className="rose">rose</span>.</blockquote>
-    			<my.Button onClick={onClick}>It's all coming together</my.Button>
+    			<Button onClick={onClick}>It's all coming together</Button>
     		</>
     	)
     }
